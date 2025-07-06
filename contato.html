@@ -1,0 +1,106 @@
+<!-- Declara o tipo de documento HTML5 -->
+<!DOCTYPE html>
+<html lang="pt-br"> <!-- Define o idioma da página como português do Brasil -->
+
+<head>
+  <!-- Define a codificação de caracteres como UTF-8 -->
+  <meta charset="UTF-8" />
+  
+  <!-- Torna a página responsiva, ajustando à largura da tela do dispositivo -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <!-- Título exibido na aba do navegador -->
+  <title>Contato – Mulheres na Engenharia</title>
+  
+  <!-- Importa o arquivo CSS externo -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Cabeçalho da página com título e menu de navegação -->
+  <header>
+    <h1>Mulheres na Engenharia</h1>
+    <nav>
+      <ul>
+        <!-- Links do menu de navegação -->
+        <li><a href="index.html">Início</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="artigos.html">Artigos</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Conteúdo principal da página -->
+  <main class="conteudo">
+    <h2>Fale conosco</h2>
+
+    <!-- Formulário de contato com envio para o Formspree -->
+    <form id="formContato" action="https://formspree.io/f/xqabnyol" method="POST">
+      <!-- Campo de entrada para nome -->
+      <label>Nome:<br><input type="text" name="nome" required></label><br>
+
+      <!-- Campo de entrada para e-mail -->
+      <label>Email:<br><input type="email" name="email" required></label><br>
+
+      <!-- Campo de entrada para telefone -->
+      <label>Telefone:<br><input type="tel" name="telefone"></label><br>
+
+      <!-- Campo de seleção para motivo do contato -->
+      <label>Motivo do contato:<br>
+        <select name="motivo" required>
+          <option value="">Selecione</option>
+          <option>Dúvida</option>
+          <option>Sugestão</option>
+          <option>Elogio</option>
+          <option>Parceria</option>
+        </select>
+      </label><br>
+
+      <!-- Campo de texto para mensagem -->
+      <label>Mensagem:<br><textarea name="mensagem" required></textarea></label><br>
+
+      <!-- Botão de envio -->
+      <button type="submit">Enviar</button>
+    </form>
+
+    <!-- Mensagem de sucesso exibida após o envio do formulário -->
+    <p id="sucessoContato" style="display:none; color: green;">Mensagem enviada com sucesso!</p>
+
+    <!-- Seção com contatos por redes sociais -->
+    <section class="contatos">
+      <h3>Entre em contato também pelas redes sociais:</h3>
+      <ul style="list-style: none; padding-left: 0;">
+        <!-- Link para o LinkedIn -->
+        <li style="margin-bottom: 10px;">
+          <a href="https://www.linkedin.com/in/luciana-prado-04a15893?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn de Luciana Prado" width="30" style="vertical-align: middle;">
+            <span style="margin-left: 8px;">LinkedIn: Luciana Prado</span>
+          </a>
+        </li>
+        <!-- Link para o Instagram -->
+        <li>
+          <a href="https://www.instagram.com/luciana.prado.3785?igsh=MXhvcTJuamZyeXJhcA%3D%3D&utm_source=qr" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram de Luciana Prado" width="30" style="vertical-align: middle;">
+            <span style="margin-left: 8px;">Instagram: @luciana.prado.3785</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Rodapé da página -->
+  <footer>
+    <p>&copy; 2025 Mulheres na Engenharia | Desenvolvido por Luciana Prado </p>
+    <p>&copy; Ponta Grossa Paraná</p>
+  </footer>
+
+  <!-- Bibliotecas JavaScript necessárias para funcionamento de máscaras e interações -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+  <script src="script.js"></script>
+
+  <!-- ATENÇÃO: Esse botão "Enviar" está fora do <form> e pode ser removido -->
+  <button type="submit">Enviar</button> <!-- Este botão está solto e deve ser removido ou movido para dentro do formulário -->
+</body>
+</html>

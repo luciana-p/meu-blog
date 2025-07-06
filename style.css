@@ -1,0 +1,242 @@
+/* Importa a fonte 'Poppins' com pesos 400 e 600 do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Estilos gerais do corpo da página */
+body {
+  font-family: 'Poppins', sans-serif; /* Define a fonte principal */
+  margin: 0;       /* Remove margens padrão */
+  padding: 0;      /* Remove espaçamentos internos padrão */
+  background: #fff; /* Cor de fundo branca */
+  color: #333;     /* Cor do texto cinza escuro */
+}
+
+/* Estilo do cabeçalho */
+header {
+  background: #2d5891; /* Cor de fundo azul escuro */
+  color: white;        /* Texto branco */
+  text-align: center;  /* Centraliza o texto */
+  padding: 10px 0 20px; /* Espaçamento interno superior e inferior */
+  position: relative;  /* Para posicionar elementos internos relativamente */
+}
+
+/* Estilo principal do conteúdo */
+main {
+  text-align: center; /* Centraliza o texto dentro da tag main */
+}
+
+/* Estilo para a logo */
+.logo {
+  position: absolute; /* Posicionamento absoluto dentro do header */
+  left: 20px;         /* Distância da esquerda */
+  top: 15px;          /* Distância do topo */
+  width: 50px;        /* Largura fixa */
+  height: auto;       /* Altura automática para manter proporção */
+}
+
+/* Estilo para a lista do menu de navegação */
+nav ul {
+  list-style: none;       /* Remove marcadores da lista */
+  padding: 0;             /* Remove espaçamento interno da lista */
+  display: flex;          /* Exibe os itens em linha (flexbox) */
+  justify-content: center; /* Centraliza os itens horizontalmente */
+  gap: 20px;              /* Espaçamento entre os itens */
+  margin-top: 10px;       /* Espaço acima da lista */
+}
+
+/* Estilo para os links do menu */
+nav a {
+  color: white;           /* Cor do texto branca */
+  text-decoration: none;  /* Remove sublinhado padrão */
+  font-weight: 600;       /* Negrito médio */
+}
+
+/* Efeito ao passar o mouse nos links do menu */
+nav a:hover {
+  text-decoration: underline; /* Sublinha o link */
+}
+
+/* Estilo para a seção banner */
+.banner {
+  background-color: hsl(189, 36%, 43%); /* Cor de fundo azul esverdeado */
+  background-size: cover; /* Ajusta imagem para cobrir todo o espaço (se houver imagem) */
+  height: 220px;          /* Altura fixa do banner */
+  display: flex;          /* Flexbox para alinhamento */
+  align-items: center;    /* Centraliza verticalmente */
+  justify-content: center;/* Centraliza horizontalmente */
+  color: white;           /* Cor do texto branca */
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.7); /* Sombra para melhorar leitura */
+  position: relative;     /* Para posicionar elementos internos */
+}
+
+/* Estilo do título dentro do banner */
+.banner h2 {
+  text-align: center;    /* Centraliza o texto */
+  align-items: center;   /* Alinha itens ao centro (redundante para h2) */
+  font-size: 2.5rem;     /* Tamanho da fonte grande */
+  margin: 10px;          /* Margem ao redor */
+  padding: 0.5em 0;      /* Espaçamento interno vertical */
+}
+
+/* Caixa com fundo semi-transparente para texto no banner */
+.texto-capa {
+  background: rgba(0, 0, 0, 0.4); /* Fundo preto com transparência */
+  padding: 10px 20px;             /* Espaçamento interno */
+  border-radius: 8px;             /* Bordas arredondadas */
+  margin-bottom: 15px;            /* Espaço abaixo */
+}
+
+/* Conteúdo principal da página */
+.conteudo {
+  max-width: 900px;    /* Largura máxima do conteúdo */
+  margin: auto;        /* Centraliza horizontalmente */
+  padding: 20px;       /* Espaçamento interno */
+}
+
+/* Estilo para imagens ilustrativas */
+img.ilustrativa {
+  width: 100%;         /* Largura máxima do contêiner */
+  max-width: 400px;    /* Limita a largura máxima */
+  display: block;      /* Exibe como bloco */
+  margin: 20px auto;   /* Espaço acima e abaixo e centraliza horizontalmente */
+  border-radius: 10px; /* Bordas arredondadas */
+}
+
+/* Estilos gerais para inputs, textarea e select em formulários */
+form input, form textarea, form select {
+  width: 50%;          /* Ocupa metade da largura do contêiner pai */
+  margin-bottom: 10px; /* Espaço abaixo de cada elemento */
+  padding: 10px;       /* Espaçamento interno */
+  border: 1px solid #ccc; /* Borda cinza clara */
+  font-family: 'Poppins', sans-serif; /* Fonte consistente */
+}
+
+/* Botão dentro do formulário */
+form button {
+  background: #2d8a91;   /* Cor de fundo azul esverdeado */
+  color: white;          /* Cor do texto branca */
+  border: none;          /* Sem borda */
+  padding: 10px 20px;    /* Espaçamento interno */
+  font-family: 'Poppins', sans-serif; /* Fonte consistente */
+  font-weight: 600;      /* Negrito médio */
+  cursor: pointer;       /* Cursor tipo "mãozinha" ao passar o mouse */
+}
+
+/* Rodapé da página */
+footer {
+  background: #f1f1f1;   /* Fundo cinza claro */
+  text-align: center;    /* Centraliza o texto */
+  padding: 20px;         /* Espaçamento interno */
+  margin-top: 40px;      /* Espaço acima do rodapé */
+  font-size: 0.9em;      /* Fonte levemente menor */
+}
+
+/* Galeria de imagens - container flexível */
+.galeria {
+  display: flex;          /* Flexbox para os itens */
+  flex-wrap: wrap;        /* Permite quebra de linha */
+  justify-content: center; /* Centraliza os itens */
+  gap: 20px;              /* Espaçamento entre as imagens */
+  margin-top: 20px;       /* Espaço acima da galeria */
+}
+
+/* Estilo para as imagens da galeria */
+.galeria img {
+  max-width: 280px;       /* Largura máxima da imagem */
+  width: 100%;            /* Ajusta à largura do contêiner */
+  border-radius: 10px;    /* Bordas arredondadas */
+  transition: transform 0.3s ease; /* Transição suave para transformações */
+}
+
+/* Efeito ao passar o mouse nas imagens da galeria */
+.galeria img:hover {
+  transform: scale(1.05); /* Aumenta a imagem */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+/* Botão para "ver mais" */
+#verMais {
+  background: #2d8a91; /* Fundo azul esverdeado */
+  color: white;        /* Texto branco */
+  border: none;        /* Sem borda */
+  padding: 10px 20px;  /* Espaçamento interno */
+  border-radius: 6px;  /* Bordas arredondadas */
+  font-weight: bold;   /* Negrito */
+  cursor: pointer;     /* Cursor de clique */
+}
+
+/* Botão estilizado como link */
+.botao-link {
+  display: inline-block;            /* Para aplicar padding e margens */
+  background-color: #f04e98;        /* Fundo rosa forte */
+  color: white;                    /* Texto branco */
+  padding: 10px 20px;              /* Espaçamento interno */
+  text-decoration: none;           /* Remove sublinhado */
+  border-radius: 5px;              /* Bordas arredondadas */
+  font-weight: bold;               /* Negrito */
+  transition: background-color 0.3s ease; /* Transição suave para fundo */
+}
+
+/* Efeito hover para o botão-link */
+.botao-link:hover {
+  background-color: #c03b78; /* Fundo rosa escuro */
+}
+
+/* Seção de contatos com destaque */
+.contatos {
+  margin-top: 30px;                /* Espaço acima */
+  padding: 15px;                  /* Espaçamento interno */
+  background-color: #f4f4f4;      /* Fundo cinza claro */
+  border-left: 4px solid #800080; /* Barra lateral roxa */
+}
+
+/* Título da seção contatos */
+.contatos h3 {
+  margin-bottom: 10px; /* Espaço abaixo do título */
+}
+
+/* Lista dentro da seção contatos */
+.contatos ul {
+  list-style: none; /* Remove marcadores */
+  padding: 0;       /* Remove espaçamento interno */
+}
+
+/* Itens da lista de contatos */
+.contatos li {
+  margin-bottom: 5px; /* Espaço entre itens */
+}
+
+/* Classe para animação de fade-in (aparecer com efeito) */
+.fade-in {
+  opacity: 0; /* Invisível */
+  transform: translateY(20px); /* Move para baixo */
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Transição suave */
+}
+
+/* Estado visível da animação fade-in */
+.fade-in.aparecendo {
+  opacity: 1;               /* Visível */
+  transform: translateY(0); /* Volta para a posição original */
+}
+
+/* Botão para voltar ao topo da página */
+#topoBtn {
+  display: none;            /* Inicialmente oculto */
+  position: fixed;          /* Fixa na tela */
+  bottom: 20px;             /* Distância da base da tela */
+  right: 20px;              /* Distância da direita da tela */
+  z-index: 100;             /* Sobreposição alta */
+  background-color: #333;   /* Fundo cinza escuro */
+  color: #fff;              /* Texto branco */
+  padding: 10px 15px;       /* Espaçamento interno */
+  font-size: 18px;          /* Tamanho da fonte */
+  border: none;             /* Sem borda */
+  border-radius: 50%;       /* Botão arredondado (círculo) */
+  cursor: pointer;          /* Cursor de clique */
+  opacity: 0.7;             /* Transparência */
+  transition: opacity 0.3s; /* Transição suave da opacidade */
+}
+
+/* Efeito hover para o botão topo */
+#topoBtn:hover {
+  opacity: 1; /* Totalmente visível ao passar o mouse */
+}

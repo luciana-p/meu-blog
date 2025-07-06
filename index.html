@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <!-- Define a codificação de caracteres para UTF-8 -->
+  <meta charset="UTF-8" />
+  
+  <!-- Configura a viewport para garantir responsividade em dispositivos móveis -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <!-- Título da página que aparece na aba do navegador -->
+  <title>Mulheres na Engenharia</title>
+  
+  <!-- Meta descrição para SEO e resumo do site -->
+  <meta name="description" content="Blog criado por Luciana para destacar e apoiar mulheres na engenharia." />
+  
+  <!-- Link para o arquivo CSS externo que estiliza a página -->
+  <link rel="stylesheet" href="style.css" />
+  
+  <!-- Estilos internos para comportamento de scroll suave na página -->
+  <style>
+     html {
+        scroll-behavior: smooth;
+     }
+  </style>
+</head>
+
+<body>
+  <!-- Cabeçalho principal da página -->
+  <header>
+    <!-- Título principal do site -->
+    <h1>Mulheres na Engenharia</h1>
+    
+    <!-- Navegação principal com links para outras páginas -->
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="artigos.html">Artigos</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+    
+    <!-- Imagem ilustrativa no cabeçalho -->
+    <img src="imagens/capa.jpg" alt="Mulher engenheira" class="ilustrativa" />
+  </header>
+
+  <!-- Seção banner com mensagem de boas-vindas -->
+  <section class="banner">
+    <div>
+      <h2>Bem-vindos ao blog!</h2>
+      <p>Compartilhando histórias e inspirações na engenharia.</p>
+    </div>
+  </section>
+
+  <!-- Conteúdo principal da página -->
+  <main class="conteudo">
+    <!-- Título da seção de galeria -->
+    <h2>Galeria de Inspiração</h2>
+    
+    <!-- Div que contém imagens da galeria -->
+    <div class="galeria">
+      <!-- Imagens com classe para estilo e efeito de fade ao rolar a página -->
+      <img src="imagens/imagem1.jpg" alt="Coloque Deus em todos os seus sonhos" class="ilustrativa fade-on-scroll"/>
+      <img src="imagens/imagem2.jpg" alt="Valorize sua família" class="ilustrativa fade-on-scroll"/>
+      <img src="imagens/imagem3.jpg" alt="Para Refletir" class="ilustrativa fade-on-scroll"/>
+
+      <!-- Botão centralizado que leva a uma página externa com histórias inspiradoras -->
+      <div class="botao-centro">
+        <a href="https://embarcados.com.br/10-engenheiras-inspiradoras/" class="botao-link" target="_blank">Histórias Inspiradoras</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Rodapé com direitos autorais e localização -->
+  <footer>
+    <p>&copy; 2025 Mulheres na Engenharia | Desenvolvido por Luciana Prado </p>
+    <p>&copy; Ponta Grossa Paraná</p>
+  </footer>
+
+  <!-- Botão para voltar ao topo da página -->
+  <button id="topoBtn" title="Voltar ao topo">↑</button>
+
+  <!-- Inclusão da biblioteca jQuery para facilitar manipulação DOM e efeitos -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  
+  <!-- Plugin jQuery para máscaras em campos de formulário -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+  
+  <!-- Script JavaScript personalizado para funcionalidades específicas da página -->
+  <script src="script.js"></script>
+</body>
+</html>
